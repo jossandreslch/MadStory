@@ -55,7 +55,12 @@ elif(user_genre == '2') or (user_genre == 'female') or (user_genre == 'f'):
     print(f'The user gente is Female')
 
 elif(user_genre == '3') or (user_genre == 'hippie') or (user_genre == 'n'):
-    print(f'The user genre is Neutral')
+    print(f'Oh...')
+    time.sleep(1.5)
+    print(f'You naughty {user_name}...')
+    time.sleep(1)
+
+
 
 else:
     print(f"Alright, {user_name}, I can see you can't read. Come back when you learn.")
