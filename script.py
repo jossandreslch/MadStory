@@ -52,7 +52,7 @@ if(user_genre == '1') or (user_genre == 'male') or (user_genre == 'm'):
     print(f'The user genre is Male')
 
 elif(user_genre == '2') or (user_genre == 'female') or (user_genre == 'f'):
-    print(f'The user gente is Female')
+    print(f'The user genre is Female')
 
 elif(user_genre == '3') or (user_genre == 'hippie') or (user_genre == 'n'):
     print(f'Oh...')
