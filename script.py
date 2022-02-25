@@ -30,7 +30,7 @@ time.sleep(1)
 
 print(' ')
 
-print(f'Welcome to your temporal narrative, {user_name}. Remember that, unlike this modern world, here you will be responsible for every decision you make.')
+print(f'Welcome to your temporal narrative, {user_name}. Remember that, unlike in this modern world, here you will be responsible for every decision you make.')
 
 print(' ')
 
@@ -38,6 +38,9 @@ time.sleep(2.5)
 
 
 pause()
+
+print(' ')
+time.sleep(1)
 
 print('Now choose your genre: (1, 2 or 3)')
 print('1) Male')
@@ -49,6 +52,10 @@ user_genre = input().lower()
 
 i = 0
 while (user_genre != '1') and (user_genre != 'male') and (user_genre != 'm') and (user_genre != '2') and (user_genre != 'female') and (user_genre != 'f') and (user_genre != '3') and (user_genre != 'hippie') and (user_genre != 'n') and (i<3):
+
+    print(' ')
+    time.sleep(1)
+
     print(f'Sorry, {user_name}, the selected option is invalid, please try again (1, 2 or 3):')
     user_genre = input().lower()
     i=i+1
@@ -68,6 +75,19 @@ elif(user_genre == '3') or (user_genre == 'hippie') or (user_genre == 'n'):
     time.sleep(1)
 
 
-
 else:
     print(f"Alright, {user_name}, I can see you can't read. Come back when you learn.")
+    sys.exit()
+
+
+time.sleep(1.5)
+
+print(f'Alright, {user_name}, now tell me, how old are you?')
+
+user_age = input()
+
+if (user_age < 0):
+    
+
+
+print(f'User profile is: Name: {user_name}, Genre: {user_genre}')
