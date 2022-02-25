@@ -26,11 +26,16 @@ time.sleep(1.5)
 print('Please, choose your name:')
 user_name = str(input()).title()
 
+time.sleep(1)
+
 print(' ')
 
 print(f'Welcome to your temporal narrative, {user_name}. Remember that, unlike this modern world, here you will be responsible for every decision you make.')
 
 print(' ')
+
+time.sleep(2.5)
+
 
 pause()
 
@@ -55,6 +60,8 @@ elif(user_genre == '2') or (user_genre == 'female') or (user_genre == 'f'):
     print(f'The user genre is Female')
 
 elif(user_genre == '3') or (user_genre == 'hippie') or (user_genre == 'n'):
+    
+    time.sleep(1)
     print(f'Oh...')
     time.sleep(1.5)
     print(f'You naughty {user_name}...')
