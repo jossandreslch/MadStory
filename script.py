@@ -49,7 +49,7 @@ print("3) I can be both ;)")
 
 user_genre = input().lower()
 
-
+#Secuencia de preguntas para input
 i = 0
 while (user_genre != '1') and (user_genre != 'male') and (user_genre != 'm') and (user_genre != '2') and (user_genre != 'female') and (user_genre != 'f') and (user_genre != '3') and (user_genre != 'hippie') and (user_genre != 'n') and (i<3):
 
@@ -82,12 +82,30 @@ else:
 
 time.sleep(1.5)
 
+#Acá finaliza la Secuencia de preguntas para input
+
+print(' ')
+
 print(f'Alright, {user_name}, now tell me, how old are you?')
 
-user_age = input()
+user_age = int(input())
 
-if (user_age < 0):
-    
+i = 0
+while (user_age < 12) or (user_age > 92) and (i<3) :
 
+    print(' ')
+    time.sleep(1)
 
-print(f'User profile is: Name: {user_name}, Genre: {user_genre}')
+    print(f'You think you are funny, isn`t it?, come on {user_name}, stop the jokes and tell me your real age:')
+    user_age = int(input())
+    i=i+1
+
+if (user_age < 25):
+    time.sleep(1)
+    print(f"Nice... young blood to the ring...")
+    time.sleep(1.5)
+else:
+    time.sleep(1)
+    print(f"Nice, I hope you are an experienced decision maker...")
+    time.sleep(1.5)
+
