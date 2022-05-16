@@ -90,8 +90,9 @@ print(f'Alright, {user_name}, now tell me, how old are you?')
 
 user_age = int(input())
 
-i = 0
-while (user_age < 12) or (user_age > 92) and (i<3) :
+i=0
+
+while (user_age > 12) or (user_age > 92) and (i<3) :
 
     print(' ')
     time.sleep(1)
