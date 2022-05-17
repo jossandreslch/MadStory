@@ -91,8 +91,7 @@ print(f'Alright, {user_name}, now tell me, how old are you?')
 user_age = int(input())
 
 i=0
-
-while (user_age > 12) or (user_age > 92) and (i<3) :
+while i<3 and user_age<12 or user_age>100:
 
     print(' ')
     time.sleep(1)
@@ -101,6 +100,8 @@ while (user_age > 12) or (user_age > 92) and (i<3) :
     user_age = int(input())
     i=i+1
 
+
+'''
 if (user_age < 25):
     time.sleep(1)
     print(f"Nice... young blood to the ring...")
@@ -109,4 +110,4 @@ else:
     time.sleep(1)
     print(f"Nice, I hope you are an experienced decision maker...")
     time.sleep(1.5)
-
+'''
