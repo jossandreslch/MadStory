@@ -91,7 +91,7 @@ print(f'Alright, {user_name}, now tell me, how old are you?')
 user_age = int(input())
 
 i=0
-while i<3 and user_age<12 or user_age>100:
+while i<3 and user_age<14 or user_age>100:
 
     print(' ')
     time.sleep(1)
@@ -99,15 +99,37 @@ while i<3 and user_age<12 or user_age>100:
     print(f'You think you are funny, isn`t it?, come on {user_name}, stop the jokes and tell me your real age:')
     user_age = int(input())
     i=i+1
-
-
-'''
-if (user_age < 25):
+if (user_age < 25 and user_age > 14):
     time.sleep(1)
     print(f"Nice... young blood to the ring...")
     time.sleep(1.5)
-else:
+elif (user_age > 25 and user_age < 100):
     time.sleep(1)
     print(f"Nice, I hope you are an experienced decision maker...")
     time.sleep(1.5)
-'''
+# With this Else statement the script will cut out
+else:
+    time.sleep(1.5)
+    print(f"{user_name}, I see that you can not read, that age is not allowed to this. See ya later.")
+    sys.exit()
+
+# In here the script continues
+
+time.sleep(1.5)
+print(f"Alright, {user_name}, so now I know that you have {user_age} years old, but I don't care anyways...")
+time.sleep(4);
+print(f'...because this is a new Mad Story...')
+time.sleep(3);
+
+pause()
+
+# This is the START of the Story/Game
+
+
+
+# User's Data Check
+time.sleep(2);
+print(f"User's Data Base:")
+print(f"User's Name = {user_name}");
+print(f"User's Genre = {user_genre}");
+print(f"User's Age = {user_age}");
