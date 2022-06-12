@@ -1,8 +1,17 @@
 import time #We import time for the time.sleep() function
 import sys #We import sys for the sys.exit() function
 
+# function for the "Press Enter" parts of the script.
 def pause():
     program_pause = input("Press <Enter> for continue...")
+
+# Dictionary of random Words related to the user's profile.
+# La idea es crear un diccionario por cada ideologia del user, y asi cuando el mismo seleccione su ideología post-nacimiento, las variables de los diccionarios se reemplacen correspondientemente
+
+user_right = {
+    'adjetives':['greedy', 'billionaire', 'corporate', 'capitalist', 'libertarian'],
+    'countries':['USA', 'Canada', 'England', 'Germany', 'Poland'],
+}
 
 print('▄▄▌ ▐ ▄▌▄▄▄ .▄▄▌   ▄▄·       • ▌ ▄ ·. ▄▄▄ .    ▄▄▄▄▄      ')
 print('██· █▌▐█▀▄.▀·██•  ▐█ ▌▪▪     ·██ ▐███▪▀▄.▀·    •██  ▪     ')
